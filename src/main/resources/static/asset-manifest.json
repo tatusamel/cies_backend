@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0e6a204d.css",
+    "main.js": "/static/js/main.5b979e9c.js",
+    "static/js/787.a2d3872a.chunk.js": "/static/js/787.a2d3872a.chunk.js",
+    "static/media/hacettepe2.png": "/static/media/hacettepe2.6997b2d8d67e3f6c1e69.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.0e6a204d.css.map": "/static/css/main.0e6a204d.css.map",
+    "main.5b979e9c.js.map": "/static/js/main.5b979e9c.js.map",
+    "787.a2d3872a.chunk.js.map": "/static/js/787.a2d3872a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e6a204d.css",
+    "static/js/main.5b979e9c.js"
+  ]
+}

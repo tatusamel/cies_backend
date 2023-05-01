@@ -17,10 +17,9 @@ public class Evaluation {
     @JoinColumn(name = "course_id")
     private Course course;
 
-    /*
     @ManyToOne
     @JoinColumn(name = "instructor_id")
-    private Instructor instructor;*/
+    private Instructor instructor;
 
     private Date start_date;
     private Date end_date;

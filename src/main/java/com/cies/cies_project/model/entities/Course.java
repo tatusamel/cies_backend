@@ -22,10 +22,8 @@ public class Course {
     private Integer number_of_students;
     private Boolean passed_enroll_limit;
 
-    /*
     @ManyToOne
     @JoinColumn
     private Instructor instructor;
 
-     */
 }

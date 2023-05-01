@@ -20,10 +20,10 @@ public class Response {
     @JoinColumn(name = "question_id")
     private Question question;
 
-    /*
+
     @ManyToOne
     @JoinColumn(name = "stident_id")
-    private Student student;*/
+    private Student student;
 
     private String answer;
 

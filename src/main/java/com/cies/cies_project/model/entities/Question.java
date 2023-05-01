@@ -1,17 +1,11 @@
 package com.cies.cies_project.model.entities;
 
+import com.cies.cies_project.model.enums.QuestionType;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
+
 @Entity
-@Table(name = "Question")
 public class Question {
 
     @Id

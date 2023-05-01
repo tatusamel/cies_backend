@@ -1,10 +1,9 @@
 package com.cies.cies_project.model.entities;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-
+import lombok.Data;
 
 @Entity
-@Table(name = "DepartmentManager")
-public class DepartmentManager extends User {
+@Data
+public class DepartmentManager extends BaseUser{
 }

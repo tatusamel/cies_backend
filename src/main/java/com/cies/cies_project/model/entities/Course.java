@@ -1,18 +1,12 @@
 package com.cies.cies_project.model.entities;
 
 
+import com.cies.cies_project.model.enums.CourseType;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
+
 @Entity
-@Table(name = "Course")
 public class Course {
 
     @Id
@@ -28,7 +22,10 @@ public class Course {
     private Integer number_of_students;
     private Boolean passed_enroll_limit;
 
+    /*
     @ManyToOne
     @JoinColumn
     private Instructor instructor;
+
+     */
 }

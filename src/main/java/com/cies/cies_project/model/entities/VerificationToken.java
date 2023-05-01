@@ -2,6 +2,7 @@ package com.cies.cies_project.model.entities;
 
 import com.cies.cies_project.model.entities.User;
 import jakarta.persistence.*;
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,10 +11,10 @@ import java.util.Calendar;
 import java.util.Date;
 
 
-@Getter
-@Setter
 @Entity
 @NoArgsConstructor
+@Setter
+@Getter
 public class VerificationToken {
     // we need ID for a token
     @Id

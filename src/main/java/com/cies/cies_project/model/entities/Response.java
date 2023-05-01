@@ -1,17 +1,11 @@
 package com.cies.cies_project.model.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
+
 @Entity
-@Table(name = "Response")
+
 public class Response {
 
     @Id
@@ -26,9 +20,10 @@ public class Response {
     @JoinColumn(name = "question_id")
     private Question question;
 
+    /*
     @ManyToOne
     @JoinColumn(name = "stident_id")
-    private Student student;
+    private Student student;*/
 
     private String answer;
 

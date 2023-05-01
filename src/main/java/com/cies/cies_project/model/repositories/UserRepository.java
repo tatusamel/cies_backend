@@ -1,6 +1,7 @@
 package com.cies.cies_project.model.repositories;
 
 import com.cies.cies_project.model.entities.User;
+import lombok.Data;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

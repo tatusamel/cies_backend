@@ -29,19 +29,22 @@ public class UserService implements IUserService{
     }
 
     @Override
+
     public User registerUser(RegistrationRequest request) {
-        Optional<User> user = this.findByEmail(request.email());
+        Optional<User> user = this.findByEmail(request.getEmail());
         if (user.isPresent()) {
             throw new UserAlreadyExistException(
-                    "User with email " + request.email() + " already exist.");
+                    "User with email " + request.getEmail() + " already exist.");
         }
         User newUser = new User();
-        newUser.setFirstName(request.firstName());
-        newUser.setLastName(request.lastName());
-        newUser.setEmail(request.email());
+        newUser.setFirstName(request.getFirstName());
+        newUser.setLastName(request.getLastName());
+        newUser.setEmail(request.getEmail());
+        newUser.setProfilePicture(request.getProfilePicture());
+
         // when we're saving the password, we only save it encoded
-        newUser.setPassword(passwordEncoder.encode(request.password()));
-        newUser.setRole(request.role());
+        newUser.setPassword(passwordEncoder.encode(request.getPassword()));
+        newUser.setRole(request.getRole());
 
         // we both save this user to the repository (database) and return it
         return userRepository.save(newUser);
@@ -83,4 +86,5 @@ public class UserService implements IUserService{
         userRepository.save(user); // save it back to the database
         return "Valid";
     }
+
 }

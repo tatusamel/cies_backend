@@ -30,6 +30,7 @@ public class RegistrationController {
 
     }
 
+
     @GetMapping("/verifyEmail")
     public String verifyEmail(@RequestParam("token") String token) {
         VerificationToken theToken = tokenRepository.findByToken(token);

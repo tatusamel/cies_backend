@@ -20,7 +20,7 @@ public class BaseUser {
     private String password;
 
     private String role;
-    private String profile_picture;
+    private String profilePicture;
 
 
     private boolean isEnabled = false;

@@ -1,11 +1,13 @@
 package com.cies.cies_project.view.dto;
 
+import lombok.Data;
 
-public record RegistrationRequest(String firstName,
-                                  String lastName,
-                                  String email,
-                                  String password,
-                                  String role) {
-
-
+@Data
+public class RegistrationRequest{
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String password;
+    private String role;
+    private String profilePicture;
 }
